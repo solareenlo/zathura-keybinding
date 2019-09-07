@@ -123,3 +123,6 @@
     Pan the document
   Button1
     Follow link
+
+## Reference
+- https://github.com/pwmt/zathura/blob/master/doc/man/_bindings.txt
