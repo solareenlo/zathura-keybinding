@@ -1,128 +1,87 @@
 # zathuraのキーバインド
 
-## General
+## 一般
 
-|キー|説明|
-|:---|:---|
-|J, PgDn|次のページへ移動する|
-|K, PgUp|前のページへ移動する|
-|h, k, j, l|左，下，上，右へ移動する（1カーソル分）|
-|Left, Down, Up, Right|左，下，上，右へ移動する（1カーソル分）|
-|^t, ^d, ^u, ^y|左，下，上，右へ移動する（半ページ分）|
-|t, ^f, ^b, space, <S-space>, y|左，下，上，右へ移動する（1ページ分）|
-|gg, G, nG|全体の最初，最後，nページに移動する|
-|H, L|現在のページの最初，最後に移動する|
-|^o, ^i|ジャンプリストを前後する|
-|||
-
-  ^j, ^k
-    Bisect forward and backward between the last two jump points
-  ^c, Escape
-    Abort
-  a, s
-    Adjust window in best-fit or width mode
-  /, ?
-    Search for text
-  n, N
-    Search for the next or previous result
-  o, O
-    Open document
-  f
-    Follow links
-  F
-    Display link target
-  \:
-    Enter command
-  r
-    Rotate by 90 degrees
-  ^r
-    Recolor (grayscale and invert colors)
-  R
-    Reload document
-  Tab
-    Show index and switch to **Index mode**
-  d
-    Toggle dual page view
-  F5
-    Switch to presentation mode
-  F11
-    Switch to fullscreen mode
-  ^m
-    Toggle inputbar
-  ^n
-    Toggle statusbar
-  +, -, =
-    Zoom in, out or to the original size
-  zI, zO, z0
-    Zoom in, out or to the original size
-  n=
-    Zoom to size n
-  mX
-    Set a quickmark to a letter or number X
-  'X
-    Goto quickmark saved at letter or number X
-  q
-    Quit
+| キー                           | 説明                                                     |
+|:-------------------------------|:---------------------------------------------------------|
+| J, PgDn                        | 次のページへ移動する                                     |
+| K, PgUp                        | 前のページへ移動する                                     |
+| h, k, j, l                     | 左，下，上，右へ移動する（1カーソル分）                  |
+| Left, Down, Up, Right          | 左，下，上，右へ移動する（1カーソル分）                  |
+| ^t, ^d, ^u, ^y                 | 左，下，上，右へ移動する（半ページ分）                   |
+| t, ^f, ^b, space, <S-space>, y | 左，下，上，右へ移動する（1ページ分）                    |
+| gg, G, nG                      | 全体の最初，最後，nページに移動する                      |
+| H, L                           | 現在のページの最初，最後に移動する                       |
+| ^o, ^i                         | ジャンプリストを前後する                                 |
+| ^j, ^k                         | 最後の2つのジャンプポイント間で前後に二等分する          |
+| ^c, Escape                     | 中止する                                                 |
+| a, s                           | ウィンドウを最適モードまたは幅モードで調整する           |
+| /, ?                           | テキストを検索する                                       |
+| n, N                           | 次または前の結果を検索する                               |
+| o, O                           | ドキュメントを開く                                       |
+| f                              | リンクをたどる                                           |
+| F                              | リンクターゲットを表示する                               |
+| \:                             | コマンドを入力する                                       |
+| r                              | 90度回転する                                             |
+| ^r                             | 色を変更する（グレースケールおよび色の反転）             |
+| R                              | ドキュメントを再読み込みする                             |
+| Tab                            | インデックスを表示し、**インデックスモード**に切り替える |
+| d                              | デュアルページビューを切り替える                         |
+| F5                             | プレゼンテーションモードに切り替える                     |
+| F11                            | フルスクリーンモードに切り替える                         |
+| ^m                             | 入力バーを切り替える                                     |
+| ^n                             | ステータスバーを切り替える                               |
+| +, -, =                        | ズームイン、ズームアウト、または元のサイズにする         |
+| zI, zO, z0                     | ズームイン、ズームアウト、または元のサイズにする         |
+| n=                             | サイズnにズームする                                      |
+| mX                             | クイックマークを文字または数字Xに設定する                |
+| 'X                             | 文字または数字Xに保存されたクイックマークに移動する      |
+| q                              | 終了する                                                 |
 
 
-## Fullscreen mode
+## フルスクリーンモード
 
-  J, K
-    Go to the next or previous page
-  space, <S-space>, <BackSpace>
-    Scroll a full page down or up
-  gg, G, nG
-    Goto to the first, the last or to the nth page
-  ^c, Escape
-    Abort
-  F11
-    Switch to normal mode
-  +, -, =
-    Zoom in, out or to the original size
-  zI, zO, z0
-    Zoom in, out or to the original size
-  n=
-    Zoom to size n
-  q
-    Quit
+| キー                          | 説明                                             |
+| :---------------------------- | :---------------------------------------------   |
+| J, K                          | 次または前のページに移動する                     |
+| space, <S-space>, <BackSpace> | ページ全体を上下にスクロールする                 |
+| gg, G, nG                     | 最初、最後、またはn番目のページに移動する        |
+| ^c, Escape                    | 中止する                                         |
+| F11                           | 通常モードに切り替える                           |
+| +, -, =                       | ズームイン、ズームアウト、または元のサイズにする |
+| zI, zO, z0                    | ズームイン、ズームアウト、または元のサイズにする |
+| n=                            | サイズnにズームする                              |
+| q                             | 終了する                                         |
 
-## Presentation mode
+## プレゼンテーションモード
 
-  space, <S-space>, <BackSpace>
-    Scroll a full page down or up
-  ^c, Escape
-    Abort
-  F5
-    Switch to normal mode
-  q
-    Quit
+| キー                          | 説明                             |
+| :---------------------------- | :----------------------------    |
+| space, <S-space>, <BackSpace> | ページ全体を上下にスクロールする |
+| ^c, Escape                    | 中止する                         |
+| F5                            | 通常モードに切り替える           |
+| q                             | 終了する                         |
 
-## Index mode
+## インデックスモード
 
-  k, j
-    Move to upper or lower entry
-  l
-    Expand entry
-  L
-    Expand all entries
-  h
-    Collapse entry
-  H
-    Collapse all entries
-  space, Return
-    Select and open entry
+| キー                          | 説明                               |
+| :---------------------------- | :---------------------------       |
+| k, j                          | 上位または下位のエントリに移動する |
+| l                             | エントリを展開する                 |
+| L                             | すべてのエントリを展開する         |
+| h                             | エントリを折りたたむ               |
+| H                             | すべてのエントリを折りたたむ       |
+| space, Return                 | エントリを選択して開く             |
 
 
-## Mouse bindings
+## マウスバインディング
 
-  Scroll
-    Scroll up or down
-  ^Scroll
-    Zoom in or out
-  Hold Button2
-    Pan the document
-  Button1
-    Follow link
+| キー                          | 説明                             |
+| :---------------------------- | :---------------------------     |
+| Scroll                        | 上下にスクロールする             |
+| ^Scroll                       | ズームインまたはズームアウトする |
+| Hold Button2                  | ドキュメントをパンする           |
+| Button1                       | リンクをたどる                   |
 
 ## Reference
 - https://github.com/pwmt/zathura/blob/master/doc/man/_bindings.txt
